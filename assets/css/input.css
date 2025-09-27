@@ -61,8 +61,6 @@
     @apply mb-10 text-center text-[48px] font-semibold;
   }
 
-  
-
   .swiper-button-next,
   .swiper-button-prev {
     @apply bg-secondary z-50 !hidden !h-[46px] !w-[46px] rounded-full lg:!block;
@@ -95,3 +93,4 @@
     @apply flex items-center justify-center;
   }
 }
+
