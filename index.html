@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BRIDGE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/css/output.css" />
   </head>
   <body>
     <header
-      class="flex-between fixed top-0 right-0 left-0 z-50 px-3 py-3 lg:px-14 lg:py-5"
+      class="flex-between fixed top-0 right-0 left-0 z-50 px-3 py-3 before:absolute before:inset-0 before:-z-10 before:h-0 before:bg-white before:content-[''] lg:px-14 lg:py-5"
     >
       <a href="/"
         ><img
@@ -36,13 +40,15 @@
     </header>
 
     <main>
-      <section class="container grid h-screen bg-[#F5F7FC] lg:grid-cols-7">
+      <section
+        class="container grid h-screen overflow-hidden bg-[#F5F7FC] lg:grid-cols-7"
+      >
         <div
           class="before:content-[' '] relative z-10 col-span-1 flex size-full flex-col justify-center before:absolute before:-top-[72px] before:-left-[123px] before:-z-10 before:h-[458px] before:w-[458px] before:rounded-full before:bg-[linear-gradient(180deg,#EAC9E8_0%,#DBD2FD_90.64%)] before:blur-[100px] lg:col-span-4"
         >
-          <h3 class="text-[24px] font-semibold">
+          <h4 class="text-[24px] font-semibold">
             The Ultimate Network Hub for
-          </h3>
+          </h4>
           <h1 class="text-[60px] font-bold text-[#125CCB]">
             Build a Global Team
           </h1>
@@ -60,10 +66,10 @@
           <div class="mt-16 flex items-center gap-6">
             <img src="assets/img/stepmint.svg" alt="stepmint" />
             <hr class="h-full w-[0.5px] bg-black" />
-            <h4 class="leading-[20px] font-medium">
+            <h5 class="leading-[20px] font-medium">
               Limited free registration <br />
               for Stepmint community
-            </h4>
+            </h5>
             <button
               class="rounded-full bg-gradient-to-r from-[#B043BB] to-[#7E73C4] px-[19px] py-[6px] font-medium text-white"
             >
@@ -71,12 +77,295 @@
             </button>
           </div>
         </div>
-        <div class="col-span-1 lg:col-span-3"></div>
+        <div
+          class="relative z-10 col-span-1 before:absolute before:-right-[200px] before:bottom-1 before:-z-10 before:h-[458px] before:w-[458px] before:rounded-full before:bg-[linear-gradient(180deg,#EAC9E8_0%,#DBD2FD_90.64%)] before:blur-[100px] lg:col-span-3"
+        >
+          <div
+            class="grid size-full grid-cols-3 grid-rows-4 gap-6 lg:px-10 lg:py-20"
+          >
+            <div
+              class="ml-auto w-2/3 rounded-full bg-[linear-gradient(180deg,#49A0CD_0%,#B643BA_50%,#6547CB_75%,#4792CC_100%)]"
+            ></div>
+            <div class="row-span-2 rounded-full">
+              <img
+                src="assets/img/hero/smile.svg"
+                class="size-full rounded-full object-cover"
+                alt="smile"
+              />
+            </div>
+            <div class=""></div>
+
+            <div class="row-span-2 rounded-full">
+              <img
+                src="assets/img/hero/appreciation.svg"
+                class="size-full rounded-full object-cover"
+                alt="smile"
+              />
+            </div>
+            <div class="row-span-2 rounded-full">
+              <img
+                src="assets/img/hero/enjoy.svg"
+                class="size-full rounded-full object-cover"
+                alt="smile"
+              />
+            </div>
+            <div class="row-span-2 rounded-full">
+              <img
+                src="assets/img/hero/call.svg"
+                class="size-full rounded-full object-cover"
+                alt="smile"
+              />
+            </div>
+            <div class=" "></div>
+            <div
+              class="mr-auto w-2/3 rounded-full bg-[linear-gradient(270deg,#95BAFA_50%,#C4F4E0_100%)]"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-secondary overflow-hidden whitespace-nowrap">
+        <div class="marquee-swiper">
+          <div
+            class="swiper-wrapper *:text-[150px] *:font-[500] *:text-white *:capitalize"
+          >
+            <div class="swiper-slide">one network.</div>
+            <div class="swiper-slide">many labels.</div>
+            <div class="swiper-slide">infinite possibilities</div>
+          </div>
+        </div>
+        <div class="mt-6 grid grid-cols-1 items-center px-14 lg:grid-cols-8">
+          <div class="col-span-1 lg:col-span-2">
+            <p class="mt-16 text-[36px] leading-[45px] text-white/50">
+              Leader-Driven<br />
+              Networking
+            </p>
+          </div>
+
+          <div
+            class="relative col-span-1 h-[460px] overflow-hidden lg:col-span-4"
+          >
+            <div
+              class="absolute -bottom-16 left-1/2 mx-auto h-[515px] w-[515px] -translate-x-1/2"
+            >
+              <video
+                class="z-0 size-full rounded-full object-cover"
+                src="assets/vid/collaboration.mp4"
+                muted
+                autoplay
+                loop
+              ></video>
+              <div
+                class="absolute inset-0 z-20 flex flex-col items-center justify-center rounded-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_30.29%,rgba(0,0,0,0.65)_100%)] px-10 text-center text-wrap text-white"
+              >
+                <h3 class="text-[28px] font-semibold">
+                  Built for Direct Selling Communities
+                </h3>
+                <p class="mt-2 font-medium">
+                  Bridge is the first CRM Tool platform for Direct Selling
+                  Community and take you through growth and success with its
+                  educational training programs to connect & thrive.
+                </p>
+                <button
+                  class="mt-4 rounded-full bg-white px-[19px] py-[6px] font-[500] text-black"
+                >
+                  Join Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-1 flex justify-end lg:col-span-2">
+            <p class="mt-16 text-[36px] leading-[45px] text-white/50">
+              Structured<br />
+              Growth
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-8 lg:py-12 overflow-hidden">
+        <h2 class="heading">Our Communities</h2>
+
+        <div class="community-swiper">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide"
+              src="assets/img/stepmint.svg"
+              alt="stepmint"
+            />
+            <img
+              class="swiper-slide"
+              src="assets/img/stepmint.svg"
+              alt="stepmint"
+            />
+            <img
+              class="swiper-slide"
+              src="assets/img/stepmint.svg"
+              alt="stepmint"
+            />
+            <img
+              class="swiper-slide"
+              src="assets/img/stepmint.svg"
+              alt="stepmint"
+            />
+            <img
+              class="swiper-slide"
+              src="assets/img/stepmint.svg"
+              alt="stepmint"
+            />
+            <img
+              class="swiper-slide"
+              src="assets/img/stepmint.svg"
+              alt="stepmint"
+            />
+            <img
+              class="swiper-slide"
+              src="assets/img/stepmint.svg"
+              alt="stepmint"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden lg:h-[670px]">
+        <video
+          class="absolute inset-0 object-cover"
+          src="assets/vid/businessman.mp4"
+          loop
+          muted
+          autoplay
+        ></video>
+        <div
+          class="relative flex size-full flex-col items-center justify-end bg-gradient-to-b from-transparent to-black/80 pb-20"
+        >
+          <h2 class="heading !mb-3 text-white">
+            Your Exclusive Preview Awaits
+          </h2>
+          <p class="mb-5 text-center font-medium text-white">
+            Discover insightful webinars lined up across<br />
+            various communities.
+          </p>
+          <button
+            class="bg-primary w-fit rounded-full px-[16px] py-[12px] font-semibold text-white"
+          >
+            Join Now
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="relative z-10 container overflow-hidden before:absolute before:-right-[200px] before:-bottom-40 before:-z-10 before:h-[458px] before:w-[458px] before:rounded-full before:bg-[linear-gradient(180deg,#EAC9E8_0%,#DBD2FD_90.64%)] before:blur-[100px]"
+      >
+        <h2 class="heading">Frequently Asked Questions</h2>
+
+        <div class="relative">
+          <button
+            class="swiper-button-prev"
+            disabled=""
+            tabindex="-1"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-92b3df101ff92f51"
+            aria-disabled="true"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="!h-[25px] rotate-180 fill-white"
+              viewBox="0 0 7 16"
+            >
+              <path
+                d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"
+              ></path>
+            </svg>
+          </button>
+
+          <button
+            class="swiper-button-next"
+            tabindex="0"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-92b3df101ff92f51"
+            aria-disabled="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="!h-[25px] fill-white"
+              viewBox="0 0 7 16"
+            >
+              <path
+                d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="swiper !py-10">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide h-[266px] rounded-[10px] bg-white p-7 shadow-xl"
+              >
+                <h4 class="text-secondary mb-2 text-[20px] font-semibold">
+                  What is Bridge?
+                </h4>
+                <p class="text-quinary leading-[24px] font-[400]">
+                  Bridge is a dynamic platform aimed at Direct Selling
+                  entrepreneurs, , and dreamers with resources and opportunities
+                  to foster growth and innovation. It’s a professionally
+                  researched platform for those who want to take control of
+                  their network or Team in Direct Selling Business
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide h-[266px] rounded-[10px] bg-white p-7 shadow-xl"
+              >
+                <h4 class="text-secondary mb-2 text-[20px] font-semibold">
+                  What is Bridge?
+                </h4>
+                <p class="text-quinary leading-[24px] font-[400]">
+                  Bridge is a dynamic platform aimed at Direct Selling
+                  entrepreneurs, , and dreamers with resources and opportunities
+                  to foster growth and innovation. It’s a professionally
+                  researched platform for those who want to take control of
+                  their network or Team in Direct Selling Business
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide h-[266px] rounded-[10px] bg-white p-7 shadow-xl"
+              >
+                <h4 class="text-secondary mb-2 text-[20px] font-semibold">
+                  What is Bridge?
+                </h4>
+                <p class="text-quinary leading-[24px] font-[400]">
+                  Bridge is a dynamic platform aimed at Direct Selling
+                  entrepreneurs, , and dreamers with resources and opportunities
+                  to foster growth and innovation. It’s a professionally
+                  researched platform for those who want to take control of
+                  their network or Team in Direct Selling Business
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide h-[266px] rounded-[10px] bg-white p-7 shadow-xl"
+              >
+                <h4 class="text-secondary mb-2 text-[20px] font-semibold">
+                  What is Bridge?
+                </h4>
+                <p class="text-quinary leading-[24px] font-[400]">
+                  Bridge is a dynamic platform aimed at Direct Selling
+                  entrepreneurs, , and dreamers with resources and opportunities
+                  to foster growth and innovation. It’s a professionally
+                  researched platform for those who want to take control of
+                  their network or Team in Direct Selling Business
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer
-      class="flex-between fixed right-0 bottom-0 left-0 flex-col gap-6 bg-[#115CCB] px-3 py-10 lg:flex-row lg:gap-0 lg:px-14 lg:py-5"
+      class="flex-between bg-secondary flex-col gap-6 px-3 py-10 lg:flex-row lg:gap-0 lg:px-14 lg:py-5"
     >
       <nav class="flex-center flex-col gap-10 lg:flex-row lg:gap-16">
         <img src="assets/img/white-logo.svg" alt="logo" />
@@ -147,6 +436,8 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/global.js"></script>
+    <script src="assets/js/swiper.js"></script>
   </body>
 </html>
