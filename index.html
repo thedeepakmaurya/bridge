@@ -42,31 +42,40 @@
 
     <main>
       <section
-        class="container grid h-screen overflow-hidden bg-[#F5F7FC] lg:grid-cols-7"
+        class="before:content-[' '] relative z-10 container grid gap-10 overflow-hidden bg-[#F5F7FC] pt-28 before:absolute before:-top-[72px] before:-left-[123px] before:-z-10 before:h-[458px] before:w-[458px] before:rounded-full before:bg-[linear-gradient(180deg,#EAC9E8_0%,#DBD2FD_90.64%)] before:blur-[100px] lg:h-screen lg:grid-cols-7 lg:gap-0 lg:pt-20"
       >
         <div
-          class="before:content-[' '] relative z-10 col-span-1 flex size-full flex-col justify-center before:absolute before:-top-[72px] before:-left-[123px] before:-z-10 before:h-[458px] before:w-[458px] before:rounded-full before:bg-[linear-gradient(180deg,#EAC9E8_0%,#DBD2FD_90.64%)] before:blur-[100px] lg:col-span-4"
+          class="col-span-1 flex size-full flex-col justify-center text-center lg:col-span-4 lg:text-left"
         >
           <h4 class="text-[24px] font-semibold">
             The Ultimate Network Hub for
           </h4>
-          <h1 class="text-[60px] font-bold text-[#125CCB]">
-            Build a Global Team
-          </h1>
+          <div class="relative h-[72px] overflow-hidden">
+            <div
+              class="animate-slide *:text-[60px] *:leading-[72px] *:font-bold *:text-[#125CCB]"
+            >
+              <h1>Build a Global Team</h1>
+              <h1>Unlock New Goals</h1>
+              <h1>Manage Efficiently</h1>
+              <h1>Networking Made Easy</h1>
+            </div>
+          </div>
           <p class="font-[400] lg:max-w-[80%]">
             A multilabel network that combines trusted products, simple
             compensation, and step-by-step training — perfect for beginners and
             experienced leaders.
           </p>
           <button
-            class="bg-primary mt-7 w-fit rounded-full px-[26px] py-[10px] font-medium text-white"
+            class="bg-primary mx-auto mt-7 w-fit rounded-full px-[26px] py-[10px] font-medium text-white lg:mx-0"
           >
             join the Community
           </button>
 
-          <div class="mt-16 flex items-center gap-6">
+          <div
+            class="mt-10 flex flex-col items-center gap-6 lg:mt-16 lg:flex-row"
+          >
             <img src="assets/img/stepmint.svg" alt="stepmint" />
-            <hr class="h-full w-[0.5px] bg-black" />
+            <hr class="hidden h-full w-[0.5px] bg-black lg:block" />
             <h5 class="leading-[20px] font-medium">
               Limited free registration <br />
               for Stepmint community
@@ -125,29 +134,33 @@
         </div>
       </section>
 
-      <section class="bg-secondary overflow-hidden whitespace-nowrap">
+      <section
+        class="bg-secondary overflow-hidden py-10 whitespace-nowrap lg:py-0"
+      >
         <div class="marquee-swiper">
           <div
-            class="swiper-wrapper *:text-[150px] *:font-[500] *:text-white *:capitalize"
+            class="swiper-wrapper *:text-[60px] *:font-[500] *:text-white *:capitalize *:lg:text-[150px]"
           >
             <div class="swiper-slide">one network.</div>
             <div class="swiper-slide">many labels.</div>
             <div class="swiper-slide">infinite possibilities</div>
           </div>
         </div>
-        <div class="mt-6 grid grid-cols-1 items-center px-14 lg:grid-cols-8">
+        <div class="mt-6 grid grid-cols-1 items-center lg:grid-cols-8 lg:px-14">
           <div class="col-span-1 lg:col-span-2">
-            <p class="mt-16 text-[36px] leading-[45px] text-white/50">
+            <p
+              class="text-center text-[28px] leading-[45px] text-white/50 lg:mt-16 lg:text-start lg:text-[36px]"
+            >
               Leader-Driven<br />
               Networking
             </p>
           </div>
 
           <div
-            class="relative col-span-1 h-[460px] overflow-hidden lg:col-span-4"
+            class="relative col-span-1 h-[400px] overflow-hidden lg:col-span-4 lg:h-[515px]"
           >
             <div
-              class="absolute -bottom-16 left-1/2 mx-auto h-[515px] w-[515px] -translate-x-1/2"
+              class="absolute left-1/2 mx-auto h-[400px] w-[400px] -translate-x-1/2 lg:-bottom-16 lg:h-[515px] lg:w-[515px]"
             >
               <video
                 class="z-0 size-full rounded-full object-cover"
@@ -176,8 +189,12 @@
             </div>
           </div>
 
-          <div class="col-span-1 flex justify-end lg:col-span-2">
-            <p class="mt-16 text-[36px] leading-[45px] text-white/50">
+          <div
+            class="col-span-1 flex justify-center lg:col-span-2 lg:justify-end"
+          >
+            <p
+              class="mt-8 text-center text-[28px] leading-[45px] text-white/50 lg:mt-16 lg:text-start lg:text-[36px]"
+            >
               Structured<br />
               Growth
             </p>
@@ -196,9 +213,11 @@
         <h2 class="heading mb-20">How it works</h2>
 
         <div class="grid lg:grid-cols-4">
-          <div class="border-primary relative border-t-[5px] px-2 py-14">
+          <div
+            class="border-primary relative ml-10 border-l-[5px] px-10 py-8 lg:border-t-[5px] lg:border-l-0 lg:px-2 lg:py-14"
+          >
             <span
-              class="border-primary flex-center absolute -top-12 left-1/2 block h-[83px] w-[83px] -translate-x-1/2 rounded-full border-[5px] bg-white"
+              class="border-primary flex-center absolute top-1/2 -left-[42px] block h-[83px] w-[83px] -translate-y-1/2 rounded-full border-[5px] bg-white lg:-top-12 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-0"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-[35px] w-[35px]"
@@ -214,7 +233,9 @@
                 />
               </svg>
             </span>
-            <h4 class="mx-auto w-[50%] text-center text-[20px] font-semibold">
+            <h4
+              class="mx-auto text-center text-[20px] font-semibold lg:w-[50%]"
+            >
               Company Sign-up
             </h4>
             <p class="text-quinary text-center font-[400]">
@@ -222,9 +243,12 @@
               community in minutes.
             </p>
           </div>
-          <div class="border-primary relative border-t-[5px] px-2 py-14">
+
+          <div
+            class="border-primary relative ml-10 border-l-[5px] px-10 py-8 lg:border-t-[5px] lg:border-l-0 lg:px-2 lg:py-14"
+          >
             <span
-              class="border-primary flex-center absolute -top-12 left-1/2 block h-[83px] w-[83px] -translate-x-1/2 rounded-full border-[5px] bg-white"
+              class="border-primary flex-center absolute top-1/2 -left-[42px] block h-[83px] w-[83px] -translate-y-1/2 rounded-full border-[5px] bg-white lg:-top-12 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-0"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-[35px] w-[35px]"
@@ -240,7 +264,9 @@
                 />
               </svg>
             </span>
-            <h4 class="mx-auto w-[50%] text-center text-[20px] font-semibold">
+            <h4
+              class="mx-auto text-center text-[20px] font-semibold lg:w-[50%]"
+            >
               Manage Your Community
             </h4>
             <p class="text-quinary text-center font-[400]">
@@ -249,9 +275,11 @@
             </p>
           </div>
 
-          <div class="border-primary relative border-t-[5px] px-2 py-14">
+          <div
+            class="border-primary relative ml-10 border-l-[5px] px-10 py-8 lg:border-t-[5px] lg:border-l-0 lg:px-2 lg:py-14"
+          >
             <span
-              class="border-primary flex-center absolute -top-12 left-1/2 block h-[83px] w-[83px] -translate-x-1/2 rounded-full border-[5px] bg-white"
+              class="border-primary flex-center absolute top-1/2 -left-[42px] block h-[83px] w-[83px] -translate-y-1/2 rounded-full border-[5px] bg-white lg:-top-12 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-0"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-[35px] w-[35px]"
@@ -267,7 +295,9 @@
                 />
               </svg>
             </span>
-            <h4 class="mx-auto w-[50%] text-center text-[20px] font-semibold">
+            <h4
+              class="mx-auto text-center text-[20px] font-semibold lg:w-[50%]"
+            >
               Prospecting Made Easy
             </h4>
             <p class="text-quinary text-center font-[400]">
@@ -276,9 +306,11 @@
             </p>
           </div>
 
-          <div class="border-primary relative border-t-[5px] px-2 py-14">
+          <div
+            class="border-primary relative ml-10 border-l-[5px] px-10 py-8 lg:border-t-[5px] lg:border-l-0 lg:px-2 lg:py-14"
+          >
             <span
-              class="border-primary flex-center absolute -top-12 left-1/2 block h-[83px] w-[83px] -translate-x-1/2 rounded-full border-[5px] bg-white"
+              class="border-primary flex-center absolute top-1/2 -left-[42px] block h-[83px] w-[83px] -translate-y-1/2 rounded-full border-[5px] bg-white lg:-top-12 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-0"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-[35px] w-[35px]"
@@ -294,7 +326,9 @@
                 />
               </svg>
             </span>
-            <h4 class="mx-auto w-[50%] text-center text-[20px] font-semibold">
+            <h4
+              class="mx-auto text-center text-[20px] font-semibold lg:w-[50%]"
+            >
               Plan & Achieve Goals
             </h4>
             <p class="text-quinary text-center font-[400]">
@@ -311,10 +345,281 @@
         </button>
       </section>
 
+      <section class="bg-primary relative z-10 container overflow-hidden">
+        <h2 class="heading text-white">Upcoming Webinar</h2>
+
+        <div class="relative">
+          <button
+            class="swiper-button-prev !bg-white shadow"
+            disabled=""
+            tabindex="-1"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-92b3df101ff92f51"
+            aria-disabled="true"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-primary !h-[25px] rotate-180"
+              viewBox="0 0 7 16"
+            >
+              <path
+                d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"
+              ></path>
+            </svg>
+          </button>
+
+          <button
+            class="swiper-button-next !bg-white shadow"
+            tabindex="0"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-92b3df101ff92f51"
+            aria-disabled="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-primary !h-[25px]"
+              viewBox="0 0 7 16"
+            >
+              <path
+                d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="swiper !pb-10">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide h-[280px] rounded-[10px] bg-white p-6 shadow-lg transition-shadow duration-300"
+              >
+                <div class="flex justify-between gap-6">
+                  <div class="flex-1">
+                    <h4
+                      class="text-secondary mb-2 text-xl leading-snug font-semibold"
+                    >
+                      Bridge Introduction
+                    </h4>
+                    <p class="text-quinary text-sm leading-relaxed">
+                      We are excited to introduce Bridge and how to use it to
+                      scale up your success rate in direct selling.
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-primary flex h-fit flex-col items-center justify-center rounded-md px-3 py-2 text-white shadow-md"
+                  >
+                    <p class="text-lg leading-none font-bold">30</p>
+                    <p class="text-xs font-medium tracking-wide uppercase">
+                      Sep
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-6 flex items-start gap-3 border-t border-gray-100 pt-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 flex-shrink-0 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10 5H8.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h7.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.987.218-2.105V14m1-5V4m0 0h-5m5 0l-7 7"
+                    />
+                  </svg>
+                  <div class="text-quinary truncate">
+                    <p class="text-sm font-medium">Facebook Live</p>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61577965691559"
+                      target="_blank"
+                      class="block max-w-[220px] truncate text-sm text-blue-600 hover:underline"
+                    >
+                      facebook.com/profile.php?id=61577965691559
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide h-[280px] rounded-[10px] bg-white p-6 shadow-lg transition-shadow duration-300"
+              >
+                <div class="flex justify-between gap-6">
+                  <div class="flex-1">
+                    <h4
+                      class="text-secondary mb-2 text-xl leading-snug font-semibold"
+                    >
+                      Bridge Introduction
+                    </h4>
+                    <p class="text-quinary text-sm leading-relaxed">
+                      We are excited to introduce Bridge and how to use it to
+                      scale up your success rate in direct selling.
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-primary flex h-fit flex-col items-center justify-center rounded-md px-3 py-2 text-white shadow-md"
+                  >
+                    <p class="text-lg leading-none font-bold">30</p>
+                    <p class="text-xs font-medium tracking-wide uppercase">
+                      Sep
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-6 flex items-start gap-3 border-t border-gray-100 pt-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 flex-shrink-0 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10 5H8.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h7.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.987.218-2.105V14m1-5V4m0 0h-5m5 0l-7 7"
+                    />
+                  </svg>
+                  <div class="text-quinary truncate">
+                    <p class="text-sm font-medium">Facebook Live</p>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61577965691559"
+                      target="_blank"
+                      class="block max-w-[220px] truncate text-sm text-blue-600 hover:underline"
+                    >
+                      facebook.com/profile.php?id=61577965691559
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide h-[280px] rounded-[10px] bg-white p-6 shadow-lg transition-shadow duration-300"
+              >
+                <div class="flex justify-between gap-6">
+                  <div class="flex-1">
+                    <h4
+                      class="text-secondary mb-2 text-xl leading-snug font-semibold"
+                    >
+                      Bridge Introduction
+                    </h4>
+                    <p class="text-quinary text-sm leading-relaxed">
+                      We are excited to introduce Bridge and how to use it to
+                      scale up your success rate in direct selling.
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-primary flex h-fit flex-col items-center justify-center rounded-md px-3 py-2 text-white shadow-md"
+                  >
+                    <p class="text-lg leading-none font-bold">30</p>
+                    <p class="text-xs font-medium tracking-wide uppercase">
+                      Sep
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-6 flex items-start gap-3 border-t border-gray-100 pt-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 flex-shrink-0 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10 5H8.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h7.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.987.218-2.105V14m1-5V4m0 0h-5m5 0l-7 7"
+                    />
+                  </svg>
+                  <div class="text-quinary truncate">
+                    <p class="text-sm font-medium">Facebook Live</p>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61577965691559"
+                      target="_blank"
+                      class="block max-w-[220px] truncate text-sm text-blue-600 hover:underline"
+                    >
+                      facebook.com/profile.php?id=61577965691559
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide h-[280px] rounded-[10px] bg-white p-6 shadow-lg transition-shadow duration-300"
+              >
+                <div class="flex justify-between gap-6">
+                  <div class="flex-1">
+                    <h4
+                      class="text-secondary mb-2 text-xl leading-snug font-semibold"
+                    >
+                      Bridge Introduction
+                    </h4>
+                    <p class="text-quinary text-sm leading-relaxed">
+                      We are excited to introduce Bridge and how to use it to
+                      scale up your success rate in direct selling.
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-primary flex h-fit flex-col items-center justify-center rounded-md px-3 py-2 text-white shadow-md"
+                  >
+                    <p class="text-lg leading-none font-bold">30</p>
+                    <p class="text-xs font-medium tracking-wide uppercase">
+                      Sep
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-6 flex items-start gap-3 border-t border-gray-100 pt-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 flex-shrink-0 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10 5H8.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h7.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.987.218-2.105V14m1-5V4m0 0h-5m5 0l-7 7"
+                    />
+                  </svg>
+                  <div class="text-quinary truncate">
+                    <p class="text-sm font-medium">Facebook Live</p>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61577965691559"
+                      target="_blank"
+                      class="block max-w-[220px] truncate text-sm text-blue-600 hover:underline"
+                    >
+                      facebook.com/profile.php?id=61577965691559
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="container">
         <h2 class="heading">Benefits to Join Bridge</h2>
 
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid gap-10 lg:grid-cols-2">
           <div class="space-y-4">
             <div
               class="flex items-end gap-4 rounded-[10px] bg-[#EAFFF6] p-4 lg:w-[70%]"
@@ -373,15 +678,53 @@
               <img src="assets/icons/sales.svg" alt="wishlist" />
             </div>
           </div>
-          <div>
+
+          <div class="my-10 lg:my-0">
             <div
-              class="border-secondary h-[521px] w-[521px] border-spacing-10 rounded-full border-2 border-dashed p-28"
+              class="border-secondary relative h-[400px] w-[400px] border-spacing-10 rounded-full border-2 border-dashed p-28 lg:h-[500px] lg:w-[500px]"
             >
+              <img
+                class="absolute top-10 left-7 h-[74px] w-[74px] rounded-full"
+                src="assets/img/members/member-one.svg"
+                alt="member"
+              />
+              <img
+                class="absolute -top-8 left-1/2 h-[74px] w-[74px] rounded-full"
+                src="assets/img/members/member-two.svg"
+                alt="member"
+              />
+              <img
+                class="absolute top-72 -left-7 h-[74px] w-[74px] rounded-full"
+                src="assets/img/members/member-three.svg"
+                alt="member"
+              />
+              <img
+                class="absolute top-68 -right-7 h-[74px] w-[74px] rounded-full"
+                src="assets/img/members/member-four.svg"
+                alt="member"
+              />
+              <img
+                class="absolute -bottom-6 left-[62%] h-[74px] w-[74px] rounded-full"
+                src="assets/img/members/member-five.svg"
+                alt="member"
+              />
+
+              <p
+                class="absolute -right-10 w-fit rounded-full bg-white p-4 font-medium shadow-xl"
+              >
+                100+ Members Joined
+              </p>
+              <p
+                class="absolute bottom-10 -left-5 w-fit rounded-full bg-white p-4 font-medium shadow-xl"
+              >
+                90% Team Growth
+              </p>
+
               <div
                 class="bg-secondary flex-center ring-secondary/50 size-full rounded-full ring-[50px]"
               >
                 <img
-                  class="w-[78px]"
+                  class="animate-double-scale w-[78px]"
                   src="assets/img/white-logo.svg"
                   alt="logo"
                 />
@@ -391,7 +734,13 @@
         </div>
       </section>
 
-      <section class="bg-primary container overflow-x-hidden">
+      <section class="bg-primary relative container">
+        <img
+          class="absolute -top-14 left-1/2 h-[116px] w-[116px] -translate-x-1/2"
+          src="assets/gif/king.gif"
+          alt="king"
+        />
+
         <h2 class="heading leading-[48px] text-white">
           Great Teams. Greater <br />
           Achievements
@@ -620,27 +969,29 @@
             class="relative z-10 col-span-1 before:absolute before:-top-[72px] before:-left-[123px] before:-z-10 before:h-[458px] before:w-[458px] before:rounded-full before:bg-[linear-gradient(180deg,#EAC9E8_0%,#DBD2FD_90.64%)] before:blur-[100px] before:content-['']"
           >
             <ul
-              class="[&>li.active]:!bg-primary space-y-[10px] font-semibold text-nowrap *:rounded-[6px] *:bg-white *:p-[16px] [&>li.active]:!text-white"
+              class="[&>li.active]:!bg-primary space-y-[10px] font-semibold text-nowrap *:cursor-pointer *:rounded-[6px] *:bg-white *:p-[16px] [&>li.active]:!text-white"
             >
-              <li class="tab active">Business Communities</li>
-              <li class="tab">Structured Growth</li>
-              <li class="tab">Leader-Driven Networking</li>
-              <li class="tab">Private & Secure</li>
+              <li class="tab active" data-tab="0">Business Communities</li>
+              <li class="tab" data-tab="1">Structured Growth</li>
+              <li class="tab" data-tab="2">Leader-Driven Networking</li>
+              <li class="tab" data-tab="3">Private & Secure</li>
             </ul>
           </div>
 
-          <div class="col-span-1 flex gap-10 lg:col-span-3 lg:gap-20">
+          <div
+            class="col-span-1 flex flex-col gap-10 lg:col-span-3 lg:flex-row lg:gap-20"
+          >
             <img
+              id="tab-image"
               class="size-full rounded-[10px] object-cover"
               src="assets/img/businesses.svg"
               alt="businesses"
             />
-
             <div class="space-y-5">
-              <h2 class="text-primary text-[24px] font-semibold">
+              <h2 id="tab-title" class="text-primary text-[24px] font-semibold">
                 Business Communities
               </h2>
-              <p class="text-quinary font-[400]">
+              <p id="tab-desc" class="text-quinary font-[400]">
                 At Bridge, we believe that true business growth comes from
                 collaboration. Our Business Communities connect distributors,
                 leaders, and entrepreneurs across multiple product labels —
@@ -648,6 +999,7 @@
                 collective success.
               </p>
               <button
+                id="tab-button"
                 class="bg-primary rounded-full px-[26px] py-[10px] text-center font-[500] text-white"
               >
                 Join Now
@@ -658,7 +1010,7 @@
       </section>
 
       <section
-        class="bg-secondary relative container before:absolute before:bottom-10 before:left-1/2 before:-translate-x-1/2 before:text-[200px] before:font-semibold before:text-white before:content-['Community']"
+        class="bg-secondary relative container before:absolute before:bottom-10 before:left-1/2 before:-translate-x-1/2 before:text-[70px] before:font-semibold before:text-white before:content-['Community'] before:lg:text-[200px]"
       >
         <h2 class="heading leading-[48px] text-white">
           Drive your community <br />
@@ -666,7 +1018,7 @@
         </h2>
 
         <div class="flex-center relative">
-          <div class="absolute top-0 left-0">
+          <div class="anim-delay-1 animate-fade-seq absolute top-0 left-0">
             <div
               class="relative h-[117px] w-[188px] overflow-hidden rounded-[10px] before:absolute before:inset-0 before:rounded-[10px] before:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.65)_100%)] before:shadow-lg before:content-['']"
             >
@@ -684,7 +1036,9 @@
             </div>
           </div>
 
-          <div class="absolute top-[130px] left-[220px]">
+          <div
+            class="anim-delay-2 animate-fade-seq absolute top-[130px] left-[220px]"
+          >
             <div
               class="relative h-[117px] w-[188px] overflow-hidden rounded-[10px] before:absolute before:inset-0 before:rounded-[10px] before:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.65)_100%)] before:shadow-lg before:content-['']"
             >
@@ -702,7 +1056,9 @@
             </div>
           </div>
 
-          <div class="absolute top-0 right-0">
+          <div
+            class="anim-delay-0 animate-fade-seq absolute top-0 right-0 opacity-0"
+          >
             <div
               class="relative h-[117px] w-[188px] overflow-hidden rounded-[10px] before:absolute before:inset-0 before:rounded-[10px] before:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.65)_100%)] before:shadow-lg before:content-['']"
             >
@@ -720,7 +1076,9 @@
             </div>
           </div>
 
-          <div class="absolute top-[130px] right-[220px]">
+          <div
+            class="anim-delay-3 animate-fade-seq absolute top-[130px] right-[220px]"
+          >
             <div
               class="relative h-[117px] w-[188px] overflow-hidden rounded-[10px] before:absolute before:inset-0 before:rounded-[10px] before:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.65)_100%)] before:shadow-lg before:content-['']"
             >
@@ -744,7 +1102,7 @@
               class="flex-center absolute bottom-20 left-1/2 -translate-x-1/2 flex-col space-y-3"
             >
               <button
-                class="bg-primary flex-center h-[59px] w-[59px] rounded-full"
+                class="bg-primary animate-scale flex-center h-[59px] w-[59px] rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

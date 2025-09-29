@@ -46,6 +46,10 @@
   body {
     @apply font-graphik;
   }
+
+  button {
+    @apply cursor-pointer;
+  }
 }
 
 @layer components {
@@ -58,12 +62,12 @@
   }
 
   .heading {
-    @apply mb-10 text-center text-[48px] font-semibold;
+    @apply  mb-6 lg:mb-10 text-center text-[36px] lg:text-[48px] font-semibold;
   }
 
   .team-button-next,
   .team-button-prev {
-    @apply !bg-transparent absolute hidden lg:!block top-1/2 -translate-y-1/2;
+    @apply absolute top-1/2 hidden -translate-y-1/2 cursor-pointer !bg-transparent lg:!block;
   }
 
   .team-button-next {
@@ -74,13 +78,14 @@
     @apply !-left-8;
   }
 
-  .team-button-next.swiper-button-disabled, .team-button-prev.swiper-button-disabled{
-    @apply !block opacity-50
+  .team-button-next.swiper-button-disabled,
+  .team-button-prev.swiper-button-disabled {
+    @apply !block opacity-50;
   }
 
-  .swiper-button-next,  
+  .swiper-button-next,
   .swiper-button-prev {
-    @apply bg-secondary z-50 !hidden !h-[46px] !w-[46px] rounded-full lg:!block;
+    @apply bg-secondary z-50 !hidden !h-[46px] !w-[46px] cursor-pointer rounded-full lg:!block;
   }
 
   .swiper-button-next {
@@ -108,5 +113,100 @@
 
   .flex-center {
     @apply flex items-center justify-center;
+  }
+
+  .animate-slide {
+    @apply flex animate-[slide_6s_infinite] flex-col;
+  }
+
+  .animate-double-scale {
+    @apply animate-[doubleScale_5s_ease-in-out_infinite];
+  }
+
+  .animate-scale {
+    animation: scale-plus 5s infinite;
+    animation-fill-mode: forwards;
+  }
+
+  .animate-fade-seq {
+    @apply animate-[fadeSeq_6s_linear_infinite];
+  }
+
+  .anim-delay-0 {
+    animation-delay: 1s;
+  }
+
+  .anim-delay-1 {
+    animation-delay: 2s;
+  }
+
+  .anim-delay-2 {
+    animation-delay: 3s;
+  }
+
+  .anim-delay-3 {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes slide {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-72px);
+  }
+  50%,
+  70% {
+    transform: translateY(-144px);
+  }
+  75%,
+  95% {
+    transform: translateY(-216px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes doubleScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(2);
+  }
+}
+
+@keyframes scale-plus {
+  0% {
+    transform: scale(-1);
+  }
+  20% {
+    transform: scale(-1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeSeq {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1; 
+  }
+  100% {
+    opacity: 1; 
   }
 }

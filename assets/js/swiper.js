@@ -44,7 +44,7 @@ document.querySelectorAll(".community-swiper").forEach((swiperEl) => {
 
     breakpoints: {
       480: {
-        slidesPerView: "1.1",
+        slidesPerView: "2.1",
       },
       768: {
         slidesPerView: "2.1",
@@ -108,7 +108,6 @@ document.querySelectorAll(".team-swiper").forEach((swiperEl) => {
     },
   });
 });
-
 
 document.querySelectorAll(".swiper").forEach((swiperEl) => {
   new Swiper(swiperEl, {
