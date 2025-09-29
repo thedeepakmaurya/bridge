@@ -54,7 +54,7 @@
 
 @layer components {
   .container {
-    @apply min-w-full px-3 py-8 lg:px-14 lg:py-12 2xl:px-72;
+    @apply min-w-full px-3 py-8 lg:px-12 lg:py-20 2xl:px-72;
   }
 
   header.scrolled::before {
@@ -62,7 +62,7 @@
   }
 
   .heading {
-    @apply  mb-6 lg:mb-10 text-center text-[36px] lg:text-[48px] font-semibold;
+    @apply mb-12 text-center text-[36px] font-semibold lg:mb-10 lg:text-[48px];
   }
 
   .team-button-next,
@@ -204,9 +204,9 @@
     opacity: 0;
   }
   15% {
-    opacity: 1; 
+    opacity: 1;
   }
   100% {
-    opacity: 1; 
+    opacity: 1;
   }
 }
