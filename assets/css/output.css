@@ -7,12 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -393,9 +391,6 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
-  .mb-20 {
-    margin-bottom: calc(var(--spacing) * 20);
-  }
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
   }
@@ -740,9 +735,6 @@
     --tw-border-style: dashed;
     border-style: dashed;
   }
-  .border-\[\#4C4C4C\] {
-    border-color: #4C4C4C;
-  }
   .border-black {
     border-color: var(--color-black);
   }
@@ -754,6 +746,9 @@
   }
   .border-gray-100 {
     border-color: var(--color-gray-100);
+  }
+  .border-gray-400 {
+    border-color: var(--color-gray-400);
   }
   .border-primary {
     border-color: var(--color-primary);
@@ -999,6 +994,14 @@
     --tw-leading: 24px;
     line-height: 24px;
   }
+  .leading-\[32\] {
+    --tw-leading: 32;
+    line-height: 32;
+  }
+  .leading-\[32px\] {
+    --tw-leading: 32px;
+    line-height: 32px;
+  }
   .leading-\[45px\] {
     --tw-leading: 45px;
     line-height: 45px;
@@ -1071,17 +1074,11 @@
   .text-gray-500 {
     color: var(--color-gray-500);
   }
-  .text-gray-700 {
-    color: var(--color-gray-700);
-  }
   .text-primary {
     color: var(--color-primary);
   }
   .text-quinary {
     color: var(--color-quinary);
-  }
-  .text-red-600 {
-    color: var(--color-red-600);
   }
   .text-secondary {
     color: var(--color-secondary);
@@ -1632,6 +1629,12 @@
       font-size: 28px;
     }
   }
+  .md\:leading-\[48px\] {
+    @media (width >= 48rem) {
+      --tw-leading: 48px;
+      line-height: 48px;
+    }
+  }
   .\*\:md\:text-\[80px\] {
     :is(& > *) {
       @media (width >= 48rem) {
@@ -1710,6 +1713,16 @@
   .xl\:mt-16 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * 16);
+    }
+  }
+  .xl\:\!mb-16 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 16) !important;
+    }
+  }
+  .xl\:mb-20 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 20);
     }
   }
   .xl\:ml-0 {
@@ -1927,6 +1940,12 @@
       font-size: 36px;
     }
   }
+  .xl\:leading-\[48px\] {
+    @media (width >= 80rem) {
+      --tw-leading: 48px;
+      line-height: 48px;
+    }
+  }
   .\*\:xl\:text-\[150px\] {
     :is(& > *) {
       @media (width >= 80rem) {
@@ -2038,10 +2057,10 @@
     min-width: 100%;
     padding-inline: calc(var(--spacing) * 3);
     padding-block: calc(var(--spacing) * 8);
-    @media (width >= 64rem) {
+    @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 12);
     }
-    @media (width >= 64rem) {
+    @media (width >= 80rem) {
       padding-block: calc(var(--spacing) * 20);
     }
     @media (width >= 96rem) {
@@ -2061,14 +2080,14 @@
   .heading {
     margin-bottom: calc(var(--spacing) * 12);
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
-    @media (width >= 64rem) {
-      margin-bottom: calc(var(--spacing) * 10);
-    }
-    @media (width >= 64rem) {
+    @media (width >= 48rem) {
       font-size: 48px;
+    }
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 10);
     }
   }
   .btn {
@@ -2160,13 +2179,13 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     --tw-duration: 300ms;
     transition-duration: 300ms;
-    @media (width >= 64rem) {
+    @media (width >= 80rem) {
       width: 30%;
     }
-    @media (width >= 64rem) {
+    @media (width >= 80rem) {
       padding: calc(var(--spacing) * 12);
     }
-    @media (width >= 64rem) {
+    @media (width >= 80rem) {
       padding-top: calc(var(--spacing) * 6);
     }
     @media (width >= 96rem) {
@@ -2186,7 +2205,7 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
     cursor: pointer;
     background-color: transparent !important;
-    @media (width >= 64rem) {
+    @media (width >= 80rem) {
       display: block !important;
     }
   }
@@ -2208,7 +2227,7 @@
     cursor: pointer;
     border-radius: calc(infinity * 1px);
     background-color: var(--color-secondary);
-    @media (width >= 64rem) {
+    @media (width >= 80rem) {
       display: block !important;
     }
   }
