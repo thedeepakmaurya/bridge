@@ -65,6 +65,52 @@
     @apply mb-12 text-center text-[36px] font-semibold lg:mb-10 lg:text-[48px];
   }
 
+  .btn {
+    @apply relative overflow-hidden text-white;
+  }
+
+  .btn:hover {
+    @apply border-primary border;
+  }
+
+  .btn::before {
+    @apply absolute inset-0 z-10 w-0 bg-white transition-all duration-300 ease-in content-[''];
+  }
+
+  .btn:hover::before {
+    @apply w-full;
+  }
+
+  .btn > * {
+    @apply relative z-20 transition-colors duration-300;
+  }
+
+  .btn:hover > * {
+    @apply text-primary z-20;
+  }
+
+  .overlay {
+    @apply pointer-events-none fixed inset-0 z-50 place-items-end bg-black/50 opacity-100 backdrop-blur transition-opacity duration-300;
+  }
+
+  .overlay.active {
+    @apply pointer-events-auto opacity-100;
+  }
+
+  .overlay:not(.active) {
+    @apply opacity-0;
+  }
+
+  .menu-modal,
+  .enquiry-modal {
+    @apply fixed top-0 right-0 h-full w-full translate-x-full space-y-5 bg-white p-5 transition-transform duration-300 lg:w-[30%] lg:p-12 lg:pt-6 2xl:max-w-[24%];
+  }
+
+  .menu-modal.active,
+  .enquiry-modal.active {
+    @apply pointer-events-auto translate-x-0;
+  }
+
   .team-button-next,
   .team-button-prev {
     @apply absolute top-1/2 hidden -translate-y-1/2 cursor-pointer !bg-transparent lg:!block;
@@ -201,28 +247,40 @@
   0% {
     transform: scale(1);
   }
-  5%, 22.5% { /* 0.5s - first scale and STAY at 1.6 until 2.25s */
+  5%,
+  22.5% {
+    /* 0.5s - first scale and STAY at 1.6 until 2.25s */
     transform: scale(1.6);
   }
-  25%, 85% { /* 2.5s - second scale to 2 and STAY until 8.5s */
+  25%,
+  85% {
+    /* 2.5s - second scale to 2 and STAY until 8.5s */
     transform: scale(2.2);
   }
-  90%, 100% { /* 9s - back to normal when everything disappears */
+  90%,
+  100% {
+    /* 9s - back to normal when everything disappears */
     transform: scale(1);
   }
 }
 
 /* Profile images appear one by one */
 @keyframes member-fade {
-  0%, 20% { /* Hidden until 2s */
+  0%,
+  20% {
+    /* Hidden until 2s */
     opacity: 0;
     transform: scale(0.5);
   }
-  30%, 75% { /* Visible 3s to 7.5s */
+  30%,
+  75% {
+    /* Visible 3s to 7.5s */
     opacity: 1;
     transform: scale(1);
   }
-  85%, 100% { /* Disappear at 8.5s */
+  85%,
+  100% {
+    /* Disappear at 8.5s */
     opacity: 0;
     transform: scale(0.5);
   }
@@ -230,15 +288,21 @@
 
 /* Labels appear DURING logo scaling */
 @keyframes label-fade {
-  0%, 3% { /* Hidden until 0.3s */
+  0%,
+  3% {
+    /* Hidden until 0.3s */
     opacity: 0;
     transform: translateY(10px);
   }
-  8%, 75% { /* Visible from 0.8s to 7.5s */
+  8%,
+  75% {
+    /* Visible from 0.8s to 7.5s */
     opacity: 1;
     transform: translateY(0);
   }
-  85%, 100% { /* Disappear with members at 8.5s */
+  85%,
+  100% {
+    /* Disappear with members at 8.5s */
     opacity: 0;
     transform: translateY(10px);
   }
@@ -246,16 +310,22 @@
 
 /* Circle container rotation - SLOWER after all appear */
 @keyframes circle-rotate {
-  0%, 40% { /* Wait until 4s (all members visible) */
+  0%,
+  40% {
+    /* Wait until 4s (all members visible) */
     transform: rotate(0deg);
   }
-  50% { /* 5s - rotate smoothly */
+  50% {
+    /* 5s - rotate smoothly */
     transform: rotate(12deg);
   }
-  60% { /* 6s - back smoothly */
+  60% {
+    /* 6s - back smoothly */
     transform: rotate(-5deg);
   }
-  70%, 100% { /* 7s - settle and stay */
+  70%,
+  100% {
+    /* 7s - settle and stay */
     transform: rotate(0deg);
   }
 }
@@ -280,12 +350,26 @@
 }
 
 /* Sequential delays for members */
-.member-1 { animation-delay: 0s; }
-.member-2 { animation-delay: 0.5s; }
-.member-3 { animation-delay: 1s; }
-.member-4 { animation-delay: 1.5s; }
-.member-5 { animation-delay: 2s; }
+.member-1 {
+  animation-delay: 0s;
+}
+.member-2 {
+  animation-delay: 0.5s;
+}
+.member-3 {
+  animation-delay: 1s;
+}
+.member-4 {
+  animation-delay: 1.5s;
+}
+.member-5 {
+  animation-delay: 2s;
+}
 
 /* Labels appear DURING logo scales */
-.label-1 { animation-delay: 0s; } /* Appears during first scale */
-.label-2 { animation-delay: 1.2s; } /* Appears during second scale */
+.label-1 {
+  animation-delay: 0s;
+} /* Appears during first scale */
+.label-2 {
+  animation-delay: 1.2s;
+} /* Appears during second scale */
