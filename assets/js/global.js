@@ -63,3 +63,25 @@ function updateTab(index) {
 tabElements.forEach((tab, index) => {
   tab.addEventListener("click", () => updateTab(index));
 });
+
+
+
+function handleAnimations() {
+  if (window.innerWidth > 1007) {
+    const elements = document.querySelectorAll("[data-animate]");
+    if (elements.length > 0) {
+      enterView({
+        selector: "[data-animate]",
+        offset: 0,
+        enter: function (el) {
+          el.classList.add("kmr-animate");
+        },
+        exit: function (el) {
+          el.classList.remove("kmr-animate");
+        },
+      });
+    }
+  }
+}
+
+handleAnimations();

@@ -195,3 +195,97 @@
     opacity: 0;
   }
 }
+
+/* Center logo - scales up twice and stays, then back to normal when disappearing */
+@keyframes double-scale {
+  0% {
+    transform: scale(1);
+  }
+  5%, 22.5% { /* 0.5s - first scale and STAY at 1.6 until 2.25s */
+    transform: scale(1.6);
+  }
+  25%, 85% { /* 2.5s - second scale to 2 and STAY until 8.5s */
+    transform: scale(2.2);
+  }
+  90%, 100% { /* 9s - back to normal when everything disappears */
+    transform: scale(1);
+  }
+}
+
+/* Profile images appear one by one */
+@keyframes member-fade {
+  0%, 20% { /* Hidden until 2s */
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  30%, 75% { /* Visible 3s to 7.5s */
+    opacity: 1;
+    transform: scale(1);
+  }
+  85%, 100% { /* Disappear at 8.5s */
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* Labels appear DURING logo scaling */
+@keyframes label-fade {
+  0%, 3% { /* Hidden until 0.3s */
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  8%, 75% { /* Visible from 0.8s to 7.5s */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  85%, 100% { /* Disappear with members at 8.5s */
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Circle container rotation - SLOWER after all appear */
+@keyframes circle-rotate {
+  0%, 40% { /* Wait until 4s (all members visible) */
+    transform: rotate(0deg);
+  }
+  50% { /* 5s - rotate smoothly */
+    transform: rotate(12deg);
+  }
+  60% { /* 6s - back smoothly */
+    transform: rotate(-5deg);
+  }
+  70%, 100% { /* 7s - settle and stay */
+    transform: rotate(0deg);
+  }
+}
+
+/* Apply animations */
+.animate-double-scale {
+  animation: double-scale 10s ease-in-out infinite;
+}
+
+.circle-container {
+  animation: circle-rotate 10s ease-in-out infinite;
+}
+
+.member-img {
+  animation: member-fade 10s ease-in-out infinite;
+  opacity: 0;
+}
+
+.member-label {
+  animation: label-fade 10s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Sequential delays for members */
+.member-1 { animation-delay: 0s; }
+.member-2 { animation-delay: 0.5s; }
+.member-3 { animation-delay: 1s; }
+.member-4 { animation-delay: 1.5s; }
+.member-5 { animation-delay: 2s; }
+
+/* Labels appear DURING logo scales */
+.label-1 { animation-delay: 0s; } /* Appears during first scale */
+.label-2 { animation-delay: 1.2s; } /* Appears during second scale */
